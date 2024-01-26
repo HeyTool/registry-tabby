@@ -6,3 +6,6 @@ node_modules
 __pycache__
 
 .python-version
+
+# ignore temp jsons
+one-line-models.json
