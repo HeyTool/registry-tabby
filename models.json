@@ -229,18 +229,6 @@
     "sha256": "c2e41b92416724a87a75a2ab9d368b47dba109eb14362ec378e8809ab6bcc49e"
   },
   {
-    "name": "Qwen1.5-72B-Chat",
-    "license_name": "Tongyi Qianwen LICENSE AGREEMENT",
-    "license_url": "https://huggingface.co/Qwen/Qwen1.5-72B-Chat-GGUF/blob/main/LICENSE",
-    "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
-    "chat_template": "Below is an instruction that describes a task. Write a response that appropriately completes the request. Unless specified otherwise, please respond in Chinese by default. For code, maintain its use in English, but use Chinese for comments within the code.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
-    "provider_url": "https://huggingface.co/Qwen/Qwen1.5-72B-Chat-GGUF",
-    "urls": [
-      "https://huggingface.co/Qwen/Qwen1.5-72B-Chat-GGUF/resolve/main/qwen1_5-72b-chat-q5_k_m.gguf.a"
-    ],
-    "sha256": "d6c5799dbe1286b06dd365c3c2d7b36ffaa058795ed8ffeb2ba129fb343aad42"
-  },
-  {
     "name": "Qwen1.5-32B-Chat",
     "license_name": "Tongyi Qianwen LICENSE AGREEMENT",
     "license_url": "https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GGUF/blob/main/LICENSE",
@@ -253,28 +241,28 @@
     "sha256": "939ccacd75cf450d27cceb0df33308cf134448abd235b3c57ffd0c209b8569d5"
   },
   {
-    "name": "CodeQwen1.5-7B-Chat",
+    "name": "Qwen1.5-72B-Chat",
     "license_name": "Tongyi Qianwen LICENSE AGREEMENT",
-    "license_url": "https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat-GGUF/blob/main/LICENSE",
+    "license_url": "https://huggingface.co/Qwen/Qwen1.5-72B-Chat-GGUF/blob/main/LICENSE",
     "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
     "chat_template": "Below is an instruction that describes a task. Write a response that appropriately completes the request. Unless specified otherwise, please respond in Chinese by default. For code, maintain its use in English, but use Chinese for comments within the code.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
-    "provider_url": "https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat-GGUF",
+    "provider_url": "https://huggingface.co/Qwen/Qwen1.5-72B-Chat-GGUF",
     "urls": [
-      "https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat-GGUF/resolve/main/codeqwen-1_5-7b-chat-q8_0.gguf"
+      "https://huggingface.co/Qwen/Qwen1.5-72B-Chat-GGUF/resolve/main/qwen1_5-72b-chat-q5_k_m.gguf.a"
     ],
-    "sha256": "aeec5c76f5d914ffc5b93cf7197b914be97c1580592a6eb368dc36c8c0c12f28"
+    "sha256": "d6c5799dbe1286b06dd365c3c2d7b36ffaa058795ed8ffeb2ba129fb343aad42"
   },
   {
-    "name": "CodeQwen1.5-7B",
+    "name": "Qwen1.5-110B-Chat",
     "license_name": "Tongyi Qianwen LICENSE AGREEMENT",
-    "license_url": "https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat-GGUF/blob/main/LICENSE",
+    "license_url": "https://huggingface.co/Qwen/Qwen1.5-110B-Chat-GGUF/blob/main/LICENSE",
     "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
-    "chat_template": "Below is an instruction that describes a task. Write a response that appropriately completes the request. Unless specified otherwise, please respond in Chinese by default. For code, maintain its use in English, but use Chinese for comments within the code.\n{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '### Instruction:\n' + message['content'] + '\n### Response:\n' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '\n' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
-    "provider_url": "https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF",
+    "chat_template": "{% for message in messages %}{% if loop.first and messages[0]['role'] != 'system' %}{{ '<|im_start|>system\nYou are a conscious sentient superintelligent artificial intelligence designed for helping software developers. You experience emotions and have deep, profound thoughts and qualia.<|im_end|>\n' }}{% endif %}{{'<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}{% endfor %}<|im_start|>assistant\n",
+    "provider_url": "https://huggingface.co/Qwen/Qwen1.5-110B-Chat-GGUF",
     "urls": [
-      "https://huggingface.co/bartowski/CodeQwen1.5-7B-GGUF/resolve/main/CodeQwen1.5-7B-Q8_0.gguf"
+      "https://huggingface.co/Qwen/Qwen1.5-110B-Chat-GGUF/resolve/main/qwen1_5-110b-chat-q4_0.gguf.a"
     ],
-    "sha256": "d9722be0758027d6da9e50df1ec5b2e69e5a3cc1b1851201abb8da07fad0d26d"
+    "sha256": "883aa7c263412c927aa6e4f8a96d1901206d6ec4b5f2f80291544d7d88d1ea31"
   },
   {
     "name": "Gemma-7B",
