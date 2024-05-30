@@ -439,6 +439,28 @@
     "sha256": "23cd31b73d5d921f48fc0eacb93265eb5ad84002e93c3c01f6b0b81c0a41a651"
   },
   {
+    "name": "Codestral-22B-v0.1",
+    "provider_url": "https://ollama.com/library/codestral",
+    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
+    "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF/resolve/main/Codestral-22B-v0.1-Q8_0.gguf"
+    ],
+    "sha256": "e1884677da3b33a3138f2e651dcf51af155ca05b3fc1f8eb7b255a0942698c15"
+  },
+  {
+    "name": "Deepseek-V2-Lite-Chat",
+    "provider_url": "https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite",
+    "license_name": "Deepseek License",
+    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
+    "chat_template": "<｜begin▁of▁sentence｜>{% for message in messages %}{% if message['role'] == 'user' %}{{ 'User: ' + message['content'] + '\n\n' }}{% elif message['role'] == 'assistant' %}{{ 'Assistant: ' + message['content'] + '<｜end▁of▁sentence｜>' }}{% elif message['role'] == 'system' %}{{ message['content'] + '\n\n' }}{% endif %}{% endfor %}{{ 'Assistant:' }}",
+    "urls": [
+      "https://huggingface.co/mzwing/DeepSeek-V2-Lite-Chat-GGUF/resolve/main/DeepSeek-V2-Lite-Chat.Q8_0.gguf"
+    ],
+    "sha256": "9d1a9d6b04718d83c294564c7d54f04f323181f9f7578e269597051e2504fdcc"
+  },
+  {
     "license_name": "Gemma License",
     "license_url": "https://ai.google.dev/gemma/terms",
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
