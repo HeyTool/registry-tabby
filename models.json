@@ -439,7 +439,7 @@
     "sha256": "23cd31b73d5d921f48fc0eacb93265eb5ad84002e93c3c01f6b0b81c0a41a651"
   },
   {
-    "name": "Codestral-22B-v0.1",
+    "name": "Codestral-22B",
     "provider_url": "https://ollama.com/library/codestral",
     "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
     "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
