@@ -440,8 +440,8 @@
   },
   {
     "name": "Codestral-22B-v0.1",
-    "provider_url": "https://ollama.com/library/codestral",
-    "license_url": "https://registry.ollama.ai:443/v2/library/codestral/blobs/sha256:5b68668f65de87c4003a41fdadbdd21308df162126a17259c58598206ebdc21a",
+    "provider_url": "https://huggingface.co/bartowski/Codestral-22B-v0.1-GGUF",
+    "license_url": "https://mistral.ai/licenses/MNPL-0.1.md",
     "prompt_template": "[SUFFIX]{suffix}[PREFIX]{prefix}",
     "chat_template": "<s>{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}",
     "urls": [
