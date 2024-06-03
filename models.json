@@ -485,6 +485,28 @@
   {
     "license_name": "Gemma License",
     "license_url": "https://ai.google.dev/gemma/terms",
+    "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
+    "name": "CodeGemma-7B-FP16",
+    "provider_url": "https://huggingface.co/google/codegemma-7b",
+    "urls": [
+      "https://huggingface.co/google/codegemma-7b-GGUF/main/main/codegemma-7b-f16.gguf"
+    ],
+    "sha256": "69de73a52fb7733b1ad9f5bfd6d02a40f6376b3bccbb711c6c13ac04f16fb236"
+  },
+  {
+    "license_name": "Gemma License",
+    "license_url": "https://ai.google.dev/gemma/terms",
+    "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
+    "name": "CodeGemma-7B-FP32",
+    "provider_url": "https://huggingface.co/google/codegemma-7b",
+    "urls": [
+      "https://huggingface.co/google/codegemma-7b-GGUF/main/main/codegemma-7b.gguf"
+    ],
+    "sha256": "54b6295b1efce3ddfe53e7b0de9efba52842ffcde55b152db08ee79ea31bc7be"
+  },
+  {
+    "license_name": "Gemma License",
+    "license_url": "https://ai.google.dev/gemma/terms",
     "chat_template": "{% if messages[0]['role'] == 'system' %}{{ raise_exception('System role not supported') }}{% endif %}{% for message in messages %}{% if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}{{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}{% endif %}{% if (message['role'] == 'assistant') %}{% set role = 'model' %}{% else %}{% set role = message['role'] %}{% endif %}{{ '<start_of_turn>' + role + '\n' + message['content'] | trim + '<end_of_turn>\n' }}{% endfor %}{% if add_generation_prompt %}{{'<start_of_turn>model\n'}}{% endif %}",
     "name": "CodeGemma-7B-Instruct",
     "provider_url": "https://huggingface.co/google/codegemma-7b-it",
