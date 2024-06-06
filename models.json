@@ -538,7 +538,7 @@
     ],
     "sha256": "aeec5c76f5d914ffc5b93cf7197b914be97c1580592a6eb368dc36c8c0c12f28"
   },
-    {
+  {
     "name": "Nomic-Embed-Text",
     "provider_url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5-GGUF",
     "license_name": "Apache 2.0",
