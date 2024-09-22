@@ -63,5 +63,16 @@
       "https://huggingface.co/bartowski/Qwen2.5-Coder-1.5B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-1.5B-Instruct-Q8_0.gguf"
     ],
     "sha256": "717ed8f7110e9ffc8a0e1a607ec131aa9ee3a8d69d5a6e11b5e15ed7b0f6af4c"
+  },
+  {
+    "name": "Qwen2.5-Coder-7B-Instruct-GGUF",
+    "license_name": "Tongyi Qianwen LICENSE AGREEMENT",
+    "license_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B/blob/main/LICENSE",
+    "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
+    "provider_url": "https://huggingface.co/bartowski/Qwen2.5-Coder-7B-Instruct-GGUF",
+    "urls": [
+      "https://huggingface.co/bartowski/Qwen2.5-Coder-7B-Instruct-GGUF/blob/resolve/Qwen2.5-Coder-7B-Instruct-Q8_0.gguf"
+    ],
+    "sha256": "ddabea51a3751a6412f06a8beaf9818a3e3e6931596337458407726220097071"
   }
 ]
