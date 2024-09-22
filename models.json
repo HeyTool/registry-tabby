@@ -54,7 +54,7 @@
     "sha256": "7e09bc605f583ded9b777bfaf2c33c064c2a2e62cec5662db1795fd7f486c3c6"
   },
   {
-    "name": "Qwen2.5-Coder-1.5B-Instruct-GGUF",
+    "name": "temp1",
     "license_name": "Tongyi Qianwen LICENSE AGREEMENT",
     "license_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B/blob/main/LICENSE",
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
