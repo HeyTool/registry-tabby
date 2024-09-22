@@ -71,7 +71,7 @@
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
     "provider_url": "https://huggingface.co/bartowski/Qwen2.5-Coder-7B-Instruct-GGUF",
     "urls": [
-      "https://huggingface.co/bartowski/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/Qwen2.5-Coder-7B-Instruct-Q8_0.gguf"
+      "https://huggingface.co/bartowski/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/main/Qwen2.5-Coder-7B-Instruct-Q8_0.gguf"
     ],
     "sha256": "ddabea51a3751a6412f06a8beaf9818a3e3e6931596337458407726220097071"
   }
