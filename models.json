@@ -46,7 +46,7 @@
     "name": "Qwen2.5-Coder-7B-GGUF",
     "license_name": "Tongyi Qianwen LICENSE AGREEMENT",
     "license_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B/blob/main/LICENSE",
-    "prompt_template": "<fim_prefix>{prefix}<fim_suffix>{suffix}<fim_middle>",
+    "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
     "provider_url": "https://huggingface.co/QuantFactory/Qwen2.5-Coder-7B-GGUF",
     "urls": [
       "https://huggingface.co/QuantFactory/Qwen2.5-Coder-7B-GGUF/resolve/main/Qwen2.5-Coder-7B.Q8_0.gguf"
