@@ -32,6 +32,17 @@
     "sha256": "aeec5c76f5d914ffc5b93cf7197b914be97c1580592a6eb368dc36c8c0c12f28"
   },
   {
+    "name": "DeepSeek-Coder-V2-Lite",
+    "provider_url": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Base",
+    "license_name": "Deepseek License",
+    "license_url": "https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL",
+    "prompt_template": "<｜fim▁begin｜>{prefix}<｜fim▁hole｜>{suffix}<｜fim▁end｜>",
+    "urls": [
+      "https://huggingface.co/bartowski/DeepSeek-Coder-V2-Lite-Base-GGUF/resolve/main/DeepSeek-Coder-V2-Lite-Base-Q8_0.gguf"
+    ],
+    "sha256": "22cef614d5b3e1d00ece317ded91c48046f1a6f24618639dea110fbc22e5f86c"
+  },
+  {
     "name": "Qwen2.5-Coder-7B-GGUF",
     "license_name": "Tongyi Qianwen LICENSE AGREEMENT",
     "license_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B/blob/main/LICENSE",
