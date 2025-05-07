@@ -91,10 +91,10 @@
     "license_name": "Tongyi Qianwen LICENSE AGREEMENT",
     "license_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B/blob/main/LICENSE",
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
-    "provider_url": "https://huggingface.co/QuantFactory/Qwen2.5-Coder-14B-GGUF",
+    "provider_url": "https://www.modelscope.cn/models/JetBrains/Mellum-4b-base-gguf",
     "urls": [
-      "https://huggingface.co/QuantFactory/Qwen2.5-Coder-14B-GGUF/resolve/main/Qwen2.5-Coder-14B.Q8_0.gguf"
+      "https://www.modelscope.cn/models/JetBrains/Mellum-4b-base-gguf/resolve/master/mellum-4b-base.Q8_0.gguf"
     ],
-    "sha256": "984691a4cf8930c4a8c4822a6b07a0b9e02c04a1f01ccc4f79ff3e6426fba916"
+    "sha256": "f8a8ae8f8b02cd992716e8849fe0424184bc7a26c2b829131ed558567307c5b2"
   }
 ]
