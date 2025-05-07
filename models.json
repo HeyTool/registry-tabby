@@ -88,8 +88,8 @@
   },
   {
     "name": "Mellum-4b-base-Test1",
-    "license_name": "Tongyi Qianwen LICENSE AGREEMENT",
-    "license_url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B/blob/main/LICENSE",
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
     "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
     "provider_url": "https://huggingface.co/JetBrains/Mellum-4b-base-gguf",
     "urls": [
